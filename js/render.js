@@ -34,7 +34,7 @@
   document.querySelectorAll('[data-team]').forEach(function (host) {
     host.innerHTML = D.STYLISTS.map(function (st) {
       var names = st.services.map(function (id) { var s = L.serviceById(D.SERVICES, id); return s ? s.name : ''; }).filter(Boolean);
-      return '<article class="card reveal"><img class="card-img tall" src="' + st.photo + '" alt="Portrait of ' + esc(st.name) + ', ' + esc(st.role) + ' at Velvet and Stone demo salon" loading="lazy">' +
+      return '<article class="card reveal"><img class="card-img tall' + (st.crop ? ' ' + st.crop : '') + '" src="' + st.photo + '" alt="Portrait of ' + esc(st.name) + ', ' + esc(st.role) + ' at Velvet and Stone demo salon">' +
         '<div class="card-body"><span class="badge">' + esc(st.role) + '</span><h3>' + esc(st.name) + '</h3>' +
         '<p><strong>' + esc(st.speciality) + '</strong></p><p class="meta">' + esc(st.bio) + '</p>' +
         '<p class="meta">Offers: ' + esc(names.slice(0, 3).join(' · ')) + (names.length > 3 ? ' · +' + (names.length - 3) + ' more' : '') + '</p>' +
@@ -58,7 +58,7 @@
     var imgs = { 'balayage': 'assets/hair.jpg', 'head-spa': 'assets/spa.jpg', 'hydra-glow': 'assets/facial.jpg', 'gel-extensions': 'assets/nails.jpg' };
     feat.innerHTML = picks.map(function (id) {
       var s = L.serviceById(D.SERVICES, id);
-      return '<article class="card reveal"><img class="card-img" src="' + imgs[id] + '" alt="' + esc(s.name) + ' at Velvet and Stone demo salon" loading="lazy">' +
+      return '<article class="card reveal"><img class="card-img" src="' + imgs[id] + '" alt="' + esc(s.name) + ' at Velvet and Stone demo salon">' +
         '<div class="card-body"><h3>' + esc(s.name) + '</h3><p class="meta">' + esc(s.blurb) + '</p>' +
         '<p><span class="price">' + L.formatPKR(s.price) + '</span> <span class="meta">· ' + L.formatDuration(s.duration) + '</span></p>' +
         '<a class="btn small ghost" href="booking.html?service=' + id + '">Book this</a></div></article>';
