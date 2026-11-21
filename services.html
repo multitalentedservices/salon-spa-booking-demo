@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services & Prices (Demo) — Velvet & Stone Salon & Spa</title>
+<meta name="description" content="Sixteen demo salon services with PKR prices and durations: hair, skin, nails and spa. Filter by category and book online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.classList.add("js");</script>
+
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="ribbon">Demo website — <strong>Velvet &amp; Stone is a fictional salon</strong> · no real bookings are taken</div>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html">Velvet <span>&amp;</span> Stone</a>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="mainNav">☰</button>
+    <nav class="main-nav" id="mainNav" aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="services.html" aria-current="page">Services & Prices</a></li><li><a href="team.html">Stylists</a></li><li><a href="booking.html">Book</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="visit.html">Visit Us</a></li></ul></nav>
+    <a class="btn small head-cta" href="booking.html">Book now</a>
+  </div>
+</header>
+<main id="main">
+
+<section class="band">
+  <div class="wrap">
+    <div class="section-head reveal"><p class="eyebrow">Menu</p><h1 >Services &amp; prices</h1><p class="meta">Sixteen services, honest PKR prices, real durations. Filter by category — then book straight from any service.</p></div>
+    <div class="chips" role="group" aria-label="Filter services by category">
+      <button class="chip" data-cat="all" aria-pressed="true">All services</button>
+      <button class="chip" data-cat="hair" aria-pressed="false">Hair</button>
+      <button class="chip" data-cat="skin" aria-pressed="false">Skin</button>
+      <button class="chip" data-cat="nails" aria-pressed="false">Nails</button>
+      <button class="chip" data-cat="spa" aria-pressed="false">Spa &amp; Massage</button>
+    </div>
+    <p class="meta" id="svcCount" aria-live="polite"></p>
+    <div class="pick-list" id="svcList"></div>
+    <p ><a class="btn" href="booking.html">Book your visit</a></p>
+  </div>
+</section>
+
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="cols">
+      <div><h3>Velvet &amp; Stone</h3><p>Salon &amp; spa in DHA Phase 6, Lahore. Hair, skin, nails and unhurried spa rituals — booked in two minutes.</p></div>
+      <div><h3>Explore</h3><p><a href="services.html">Services &amp; prices</a><br><a href="team.html">Our stylists</a><br><a href="booking.html">Book a visit</a><br><a href="gallery.html">Gallery</a></p></div>
+      <div><h3>Visit</h3><p>12-C Khayaban-e-Ittehad,<br>DHA Phase 6, Lahore<br><a href="tel:+923214567890">0321 456 7890</a><br>Tue–Sun · 10 am – 8 pm · Mon closed</p></div>
+    </div>
+    <p class="demo-note">DEMO: Velvet &amp; Stone is a fictional salon created as a portfolio demo by Multi-Talented Services for BalanceBit Solutions. All services, prices, stylists, reviews and bookings are demo data — no real appointments are taken. © <span id="year">2026</span> Velvet &amp; Stone (Demo).</p>
+  </div>
+</footer>
+<script src="js/data.js"></script><script src="js/logic.js"></script><script src="js/render.js"></script><script src="js/main.js"></script>
+</body>
+</html>

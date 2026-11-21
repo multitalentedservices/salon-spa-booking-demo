@@ -1,0 +1,128 @@
+{
+  "index@phone": {
+    "overflowX": 0,
+    "badEls": [],
+    "hiddenCount": 0,
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "services@phone": {
+    "overflowX": 0,
+    "badEls": [],
+    "hiddenCount": 0,
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "team@phone": {
+    "overflowX": 0,
+    "badEls": [],
+    "hiddenCount": 0,
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "booking@phone": {
+    "overflowX": 0,
+    "badEls": [],
+    "hiddenCount": 0,
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "gallery@phone": {
+    "overflowX": 0,
+    "badEls": [],
+    "hiddenCount": 0,
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "visit@phone": {
+    "overflowX": 0,
+    "badEls": [],
+    "hiddenCount": 0,
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "index@tablet": {
+    "overflowX": 0,
+    "badEls": [],
+    "hiddenCount": 0,
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "services@tablet": {
+    "overflowX": 0,
+    "badEls": [],
+    "hiddenCount": 0,
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "team@tablet": {
+    "overflowX": 0,
+    "badEls": [],
+    "hiddenCount": 0,
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "booking@tablet": {
+    "overflowX": 0,
+    "badEls": [],
+    "hiddenCount": 0,
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "gallery@tablet": {
+    "overflowX": 0,
+    "badEls": [],
+    "hiddenCount": 0,
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "visit@tablet": {
+    "overflowX": 0,
+    "badEls": [],
+    "hiddenCount": 0,
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "index@desktop": {
+    "overflowX": 0,
+    "badEls": [],
+    "hiddenCount": 0,
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "services@desktop": {
+    "overflowX": 0,
+    "badEls": [],
+    "hiddenCount": 0,
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "team@desktop": {
+    "overflowX": 0,
+    "badEls": [],
+    "hiddenCount": 0,
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "booking@desktop": {
+    "overflowX": 0,
+    "badEls": [],
+    "hiddenCount": 0,
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "gallery@desktop": {
+    "overflowX": 0,
+    "badEls": [],
+    "hiddenCount": 0,
+    "brokenImgs": [],
+    "textBad": []
+  },
+  "visit@desktop": {
+    "overflowX": 0,
+    "badEls": [],
+    "hiddenCount": 0,
+    "brokenImgs": [],
+    "textBad": []
+  }
+}

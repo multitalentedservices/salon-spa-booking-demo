@@ -1,0 +1,86 @@
+PASS 16 services defined
+PASS 4 stylists defined
+PASS 4 categories + all
+PASS service ids unique
+PASS stylist ids unique
+PASS every service has price>0, duration>0, blurb
+PASS every service category valid
+PASS every category has >=3 services
+PASS every stylist service id exists
+PASS every stylist photo file exists
+PASS every review has 4-5 stars + text
+PASS filter all returns 16
+PASS filter hair returns only hair
+PASS filter hair count = 4
+PASS filter spa count = 4
+PASS filter unknown category returns 0
+PASS filter does not mutate source
+PASS balayage only covered by aisha
+PASS nail-art only covered by zara
+PASS cut covered by aisha+bilal
+PASS no services selected -> all stylists
+PASS hair+nails combo covered by nobody
+PASS totals single cut = 3500/60
+PASS totals balayage+blowout = 17000/195
+PASS totals empty = 0/0
+PASS totals ignores unknown id
+PASS formatPKR 14500
+PASS formatDuration 195 = 3 hr 15 min
+PASS formatDuration 45
+PASS formatDuration 120
+PASS 2026-11-23 is a Monday (closed)
+PASS 2026-11-24 is not closed
+PASS Monday slots = []
+PASS past date slots = []
+PASS open day has 10 slots (10:00-19:00)
+PASS first slot 10:00, last 19:00
+PASS slots deterministic across calls
+PASS some slots taken, some available (demo mix)
+PASS taken slots are not available
+PASS today: slots at/before now are past
+PASS isPastDate rejects yesterday
+PASS isPastDate accepts today
+PASS isPastDate rejects garbage
+PASS valid booking has no errors
+PASS empty booking flags all fields
+PASS past date rejected
+PASS Monday rejected with closed message
+PASS short name rejected
+PASS bad phone rejected
+PASS intl phone accepted
+PASS first-available stylist accepted
+PASS missing time rejected
+PASS wa link starts with wa.me demo number
+PASS wa message contains service name
+PASS wa message contains stylist name
+PASS wa message contains total PKR 3,500
+PASS wa message contains booking ref
+PASS booking ref format VS-DEMO-NNNN
+PASS booking ref deterministic
+PASS index.html has DEMO labelling
+PASS index.html has unique title
+PASS index.html has meta description
+PASS services.html has DEMO labelling
+PASS services.html has unique title
+PASS services.html has meta description
+PASS team.html has DEMO labelling
+PASS team.html has unique title
+PASS team.html has meta description
+PASS booking.html has DEMO labelling
+PASS booking.html has unique title
+PASS booking.html has meta description
+PASS gallery.html has DEMO labelling
+PASS gallery.html has unique title
+PASS gallery.html has meta description
+PASS visit.html has DEMO labelling
+PASS visit.html has unique title
+PASS visit.html has meta description
+PASS all 126 internal refs resolve
+PASS sitemap.xml lists 6 pages
+PASS robots.txt present with sitemap
+PASS JSON-LD HealthAndBeautyBusiness on index
+PASS code weight 69 KB < 400 KB
+PASS media total 812 KB <= 1600 KB
+PASS largest image 107 KB <= 120 KB
+
+RESULT: 84 PASS / 0 FAIL
