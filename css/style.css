@@ -18,7 +18,7 @@ h1{font-size:clamp(2.4rem,6vw,4.2rem)}
 h2{font-size:clamp(1.9rem,4vw,2.7rem)}
 h3{font-size:1.45rem}
 p{margin:0 0 1em}
-a{color:var(--bronze-dark)}
+a{color:var(--bronze-dark);text-decoration:none}
 .wrap{max-width:var(--maxw);margin:0 auto;padding:0 20px}
 .skip-link{position:absolute;left:-9999px;top:0;background:var(--ink);color:var(--porcelain);padding:10px 16px;z-index:99}
 .skip-link:focus{left:8px;top:8px}
@@ -179,3 +179,42 @@ figure{margin:0}
 .map-panel a.plain{color:var(--blush-tint)}
 .confirm-box .summary{text-align:left;margin:18px auto;max-width:520px}
 .mt{margin-top:26px}
+
+/* ---------- Premium layer (2026-11-22) ---------- */
+/* P7: cross-document View Transitions — progressive enhancement, ~400ms. */
+@view-transition{navigation:auto}
+::view-transition-old(root){animation:vt-out .4s cubic-bezier(.22,1,.36,1)}
+::view-transition-new(root){animation:vt-in .4s cubic-bezier(.22,1,.36,1)}
+@keyframes vt-out{to{opacity:0}}
+@keyframes vt-in{from{opacity:0}}
+/* Ritual chapter — static state: images in a calm row, all chapters visible.
+   The .ritual-enhanced class (JS only) restacks them for the pinned scene. */
+.ritual-media{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:30px}
+.ritual-media img{width:100%;height:230px;object-fit:cover;border-radius:var(--radius)}
+.ritual-steps{display:grid;gap:22px}
+.ritual-step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+.ritual-enhanced .ritual-media{position:relative;display:block;height:clamp(300px,46vw,460px);margin-bottom:26px}
+.ritual-enhanced .ritual-media img{position:absolute;inset:0;height:100%}
+.ritual-enhanced .ritual-steps{grid-template-columns:repeat(3,1fr)}
+@media (max-width:700px){.ritual-enhanced .ritual-steps{grid-template-columns:1fr}.ritual-media{grid-template-columns:1fr}.ritual-media img{height:200px}}
+/* Swiper rails (team + gallery) — fixed slide rhythm, bronze pagination. */
+.rail-swiper{padding-bottom:6px}
+.rail-swiper .swiper-pagination{position:relative;margin-top:14px;bottom:auto;left:auto;transform:none}
+.rail-swiper .swiper-slide{height:auto}
+.rail-swiper .swiper-slide>*{height:100%}
+.rail-swiper .swiper-pagination-bullet{background:var(--stone);opacity:1;width:10px;height:10px}
+.rail-swiper .swiper-pagination-bullet-active{background:var(--bronze)}
+.rail-swiper figure img{width:100%;height:260px;object-fit:cover;border-radius:var(--radius)}
+/* Booking-flow micro-interactions — step changes at the 420ms craft median. */
+.step-panel.on{animation:step-in .42s cubic-bezier(.22,1,.36,1)}
+@keyframes step-in{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.pick{transition:border-color .25s,box-shadow .25s,transform .2s}
+.pick:active{transform:scale(.995)}
+.slot{transition:background .22s,color .22s,border-color .22s,transform .15s}
+.slot:active{transform:scale(.96)}
+.steps li{transition:background .3s,color .3s,border-color .3s}
+@media (prefers-reduced-motion: reduce){
+  ::view-transition-old(root),::view-transition-new(root){animation:none}
+  .step-panel.on{animation:none}
+  .ritual-enhanced .ritual-media{position:static;height:auto}
+}

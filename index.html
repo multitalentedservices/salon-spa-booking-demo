@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Velvet & Stone Salon & Spa (Demo) — Hair, Skin, Nails & Spa in DHA Lahore</title>
 <meta name="description" content="Demo salon and spa website: services, stylists and a working online booking demo. Velvet & Stone, DHA Phase 6, Lahore.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+
+
+<link rel="stylesheet" href="assets/fonts/fonts.css">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="css/style.css">
 <script>document.documentElement.classList.add("js");</script>
@@ -50,10 +50,39 @@
     </div>
   </div>
 </section>
+<section class="band ritual" id="ritual">
+  <div class="wrap">
+    <div class="section-head reveal"><p class="eyebrow">The ritual</p><h2>Atmosphere before price</h2><p class="meta">Every visit follows the same unhurried arc — scroll through it the way a guest lives it.</p></div>
+    <div class="ritual-stage">
+      <div class="ritual-media">
+        <img src="assets/lounge.jpg" alt="The calm reception lounge where every Velvet and Stone visit begins" data-ritual-img>
+        <img src="assets/spa.jpg" alt="The tranquil spa suite during the ritual's middle chapter" data-ritual-img>
+        <img src="assets/hero.jpg" alt="A stylist's finishing touch at the end of the ritual" data-ritual-img>
+      </div>
+      <div class="ritual-steps">
+        <article class="ritual-step" data-ritual-step><p class="eyebrow">Chapter one</p><h3>Arrive &amp; unwind</h3><p>The lounge first: a warm towel, something cool to drink, and a consultation that starts with listening — not with a price list. Your stylist stays with you from this chair to the last.</p></article>
+        <article class="ritual-step" data-ritual-step><p class="eyebrow">Chapter two</p><h3>The ritual itself</h3><p>Steam, warm stone, slow hands. Whether it is colour, skin or the head spa, the work is spaced and unhurried — appointments are never stacked, and the room stays quiet enough to hear yourself think.</p></article>
+        <article class="ritual-step" data-ritual-step><p class="eyebrow">Chapter three</p><h3>Leave restored</h3><p>A finish you can repeat at home, honest aftercare, and your next visit booked before you step out — only if you want it. No product pressure at the till, ever.</p></article>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="band">
   <div class="wrap">
     <div class="section-head reveal"><p class="eyebrow">Guest words</p><h2>Reviews from the chair</h2><p class="meta">Demo reviews shown for illustration.</p></div>
     <div class="grid c2" data-reviews></div>
+  </div>
+</section>
+<section class="band alt">
+  <div class="wrap">
+    <div class="section-head reveal"><p class="eyebrow">The shelf · our own label</p><h2>Take the ritual home</h2><p class="meta">The small Velvet &amp; Stone label our stylists actually reach for — sold in studio, demo products with demo prices.</p></div>
+    <div class="grid c4">
+      <article class="card reveal"><img class="card-img" src="assets/spa.jpg" alt="Velvet Head Spa Oil from the salon's own demo label"><div class="card-body"><h3>Velvet Head Spa Oil</h3><p class="meta">The warm-oil blend from the signature ritual — scalp massage, weekly.</p><p><span class="price">PKR 2,400</span> <span class="meta">· demo price</span></p></div></article>
+      <article class="card reveal"><img class="card-img" src="assets/facial.jpg" alt="Bronze Sugar Body Scrub from the salon's own demo label"><div class="card-body"><h3>Bronze Sugar Scrub</h3><p class="meta">Our body-scrub recipe in a jar — shea-rich, softly polishing.</p><p><span class="price">PKR 1,850</span> <span class="meta">· demo price</span></p></div></article>
+      <article class="card reveal"><img class="card-img" src="assets/nails.jpg" alt="Cuticle and hand cream from the salon's own demo label"><div class="card-body"><h3>Porcelain Hand Cream</h3><p class="meta">The nail bar's finishing cream — fast in, no grease, soft hands.</p><p><span class="price">PKR 950</span> <span class="meta">· demo price</span></p></div></article>
+      <article class="card reveal"><img class="card-img" src="assets/hair.jpg" alt="Silk Finish Hair Mist from the salon's own demo label"><div class="card-body"><h3>Silk Finish Hair Mist</h3><p class="meta">A light gloss mist for blowout days two and three.</p><p><span class="price">PKR 1,600</span> <span class="meta">· demo price</span></p></div></article>
+    </div>
+    <p class="meta reveal">Loyalty, the studio way: every fifth shelf purchase is on us — ask at the desk. Demo offer, in a fictional salon.</p>
   </div>
 </section>
 <section class="band dark">
@@ -77,5 +106,8 @@
   </div>
 </footer>
 <script src="js/data.js"></script><script src="js/logic.js"></script><script src="js/render.js"></script><script src="js/main.js"></script>
+<script defer src="assets/vendor/gsap.min.js"></script>
+<script defer src="assets/vendor/ScrollTrigger.min.js"></script>
+<script defer src="js/premium.js"></script>
 </body>
 </html>
